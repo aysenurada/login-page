@@ -6,6 +6,7 @@
 body {
   background-color: #E9ECEF;
   font-family: "Segoe UI";
+  color: black;
 }
 
 .page-container {
@@ -75,32 +76,49 @@ img {
   outline: none;
 }
 
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+}
+
 .remember-me {
   display: flex;
   align-items: center;
+  gap: 5px;
+}
+
+.forgot-password {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
   margin-top: -1px;
 }
 
 .remember-me label {
   font-size: 13px;
   padding-bottom: 2px;
+  margin-top: -1px;
 }
 
-.checkbox-remember-me {
-  border: 1px solid #e8e7e7;
+.remember-me label {
+  padding-top: 2px;
+}
+
+.checkbox-custom {
   width: 14px;
   height: 14px;
-  margin-right: 5px;
-}
-
-.checkbox-remember-me:hover {
+  border: 1px solid #D9D9D9;
   cursor: pointer;
 }
 
-.checkbox-remember-me:checked {
-  border: none;
+.checkbox-custom:hover {
+  border-color: #515475;
+}
+
+.checkbox-custom:checked {
   background-color: #515475;
-  cursor: pointer;
 }
 
 .login-button {
